@@ -3,14 +3,11 @@
 \usepackage{graphicx}
 \usepackage[top = 1.7cm, bottom = 1.7cm, left = 2.0cm, right = 2.0cm]{geometry}
 \usepackage[english]{babel}
-\usepackage{subfig} % to use subfloat for several images
-\usepackage{multirow}
+\usepackage[T1]{fontenc} % recommended for languages with accents
+\usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{natbib}
-%\bibliographystyle{aasjournal}
 \bibliographystyle{mnras}
-%\bibliographystyle{plainnat}
-%\bibliographystyle{unsrtnat}
 
 %% doble space only the text (not captions)
 %\usepackage{setspace}
@@ -21,10 +18,12 @@
 \newcommand{\cmcub}{\mathrm{\, cm^{-3}}}
 \newcommand{\micron}{\, \mu \mathrm{m}}
 
+\usepackage{subfig} % to use subfloat for several images
+\usepackage{multirow} % to join columns in a table
 \usepackage{changepage} % To displace horizontaly a paragraph.
-\usepackage{float} % para que las imagenes aparezcan donde las pongo, usuando H
-\usepackage{amssymb} % para usar símbolos como \lesssim
-\usepackage{lscape} % poner un hoja horizontal dentro del texto
+\usepackage{float} % to place images just where I want them using H
+\usepackage{amssymb} % to use symbols such as \lesssim
+\usepackage{lscape} % to include a horizontal page
 \usepackage[referable]{threeparttablex} % to comment in a table
 \usepackage{booktabs} % for improved versions of \hline
 \usepackage[section]{placeins} % to automatically ensure floats do not go into the next section
@@ -77,7 +76,7 @@
 \setcounter{tocdepth}{4} % Level of depth shown in the table of content
 
 %++++++++++++++++++++++++++++++++++++++++++++
-% Reference as MNRAS
+% References as in MNRAS
 \usepackage[pdfpagelabels=false]{hyperref}  % Hyperlinks
 \hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,filecolor=blue,urlcolor=blue,}
 
@@ -393,14 +392,18 @@
 	\end{tabular}\\
 %	{\centering{\includegraphics[scale=0.4]{./pictures/logoUNAM}}}
 \end{center}	
-\vspace*{3mm}
+\vspace*{0mm}
 \begin{center}
 % Spanish
 {\Large \textbf{Hacia un Estudio Completo de la}}\\ \vspace*{2mm}
 {\Large \textbf{Funci\'on de Masa Inicial y la Evoluci\'on}}\\ \vspace*{2mm}
 {\Large \textbf{Cinem\'atica Temprana del Grupo Estelar 25 Orionis}}\\
 \vspace*{10mm}
-{\Large Para Optar por el Grado de Doctor en Ciencias (Astrof\'isica)}\\
+{\huge TESIS}\\
+\vspace*{5mm}
+{\Large Que Para Optar por el Grado de:} \\
+\vspace*{1mm}
+{\Large Doctor en Ciencias (Astrof\'isica)}\\
 \vspace*{10mm}
 {\Large Presenta:}\\
 \vspace*{5mm}
@@ -505,7 +508,7 @@
 \addcontentsline{toc}{section}{Resumen}%
 %\markboth{Extended Summary}{Extended Summary}%
 
-Los c\'umulos estelares j\'ovenes son lugares especiales para entender el proceso de formaci\'on estelar y su evoluci\'on temprana, lo cual se logra, en gran medida, a trav\'es del estudio de la funci\'on de masa inicial (IMF). Particularmente interesantes son los c\'umulos que han pasado su etapa de embebidos y est\'an en una etapa cr\'itica a la cual solo una fracci\'on peque\~na sobrevive para permanecer como grupos ligados gravitacionalmente. Un c\'umulo estelar ideal para este tipo de estudios es 25 Orionis (25 Ori), donde ya se ha disipado la nube progenitora pero la asociaci\'on a\'un permanece como sobre densidad en el cielo. Estas condiciones permiten estudiar la poblaci\'on estelar y sub-estelar del c\'umulo, desde las masas planetarias hasta estrellas de alta masa, a lo largo de toda extensi\'on espacial. 
+Los c\'umulos estelares j\'ovenes son lugares especiales para entender el proceso de formaci\'on estelar y su evoluci\'on temprana, lo cual se logra, en gran medida, a trav\'es del estudio de la funci\'on de masa inicial (IMF). Particularmente interesantes son los c\'umulos que han pasado su etapa de embebidos y est\'an en una etapa cr\'itica a la cual solo una fracci\'on peque\~na sobrevive para permanecer como grupos ligados gravitacionalmente. Un c\'umulo estelar ideal para este tipo de estudios es 25 Orionis (25 Ori), donde ya se ha disipado la nube progenitora pero la asociaci\'on a\'un permanece como sobre densidad en el cielo. Estas condiciones permiten estudiar la poblaci\'on estelar y sub-estelar del c\'umulo, desde las masas planetarias hasta estrellas de alta masa, a lo largo de toda su extensi\'on espacial. 
 
 Utilizando fotometr\'ia \'optica de observaciones con DECam y del CIDA Deep Survey of Orion y fotometr\'ia infrarroja de VISTA, m\'as datos p\'ublicos de $Hipparcos$, UCAC4 y 2MASS, seleccionamos, en base a diagramas color-magnitud y color-color, una lista de 1687 candidatos a miembros de 25 Ori en una \'area de 1.1$^\circ$ de radio alrededor de la sobre densidad y con masas estimadas que van desde las 10 \ac{Mjup} \ac{Msun}. Con esta muestra construimos la IMF de 25 Ori, la cual es completa m\'as all\'a del l\'imite de quema de Deuterio e incluye a las estrellas m\'as masivas de la asociaci\'on. Ajustamos una triple ley de potencias, una lognormal y una 'tapered power law' a la IMF resultante para compararla con otras regiones de formaci\'on estelar. Adem\'as, analizamos la fracci\'on de enanas caf\'es y estrellas y la comparamos que otras regiones. Nuestros resultados son consistentes con la mayor\'ia de las regiones de comparaci\'on, las cuales presentan diversas condiciones f\'isicas, lo cual indica que la formaci\'on de estrellas y enanas caf\'es es un proceso que tiene m\'inima dependencia con las condiciones ambientales. Adem\'as, la continuidad de nuestra IMF soporta un escenario en el que el mecanismo de formaci\'on es similar para objetos con masas planetarias hasta las estrellas de alta masa. Al analizar si la IMF var\'ia como funci\'on del radio encontramos que los objetos subestelares y estelares tienen distribuciones espaciales similares. Finalmente, confirmamos que 25 Ori es un grupo no ligado gravitacionalmente.
 
@@ -534,27 +537,30 @@ Adicionalmente al estudio fotom\'etrico tenemos en marcha un sondeo espectrosc\'
 
 \section{Introduction}
 \label{sec:introduction}
+%Most stars are born in young clusters which present a diversity of enviromental conditions, evolutionary stages and populations, making them ideal places to study the star forming process. However, most of the young stellar groups are dispersed when they dissipate their molecular gas and dust \citep{Lada-Lada2003} and their components ending populating the Galactic disk. This evolutionary process depends of the kinematics and total mass of the stellar group.
 
-%\subsection{Stellar Populations}
-%\label{sec:populations}
-%
-%\subsection{Initial Mass Function}
-%\label{sec:IMF}
-%
-%\subsection{Dynamical Evolution of Clusters}
-%\label{sec:evolution}
-%
-%\subsection{25 Orionis Group}
-%\label{sec:25Ori}
-%
-%\subsection{Motivation}
-%\label{sec:motivation}
-%
-%\subsection{Main Goals}
-%\label{sec:goals}
+Star formation is a complex process than can be structured on a wide range of scales; from small compact clusters to star-forming complexes \citep{Larson1994,Elmegreen-Efremov1996,Bonnell2011}. Even, these structures can extend to galactic scales \citep{Efremov2015} to the smallest scale being multiple stellar systems and single stars. However, only about 10\% of the stars are formed in gravitationally bound clusters \citep[e.g. ][]{Schweizer2009,Ward-Kruijssen2018}. In fact, most of the young stellar groups are dispersed when the primordial gas is expelled; only less than 10\% of the embedded clusters, which contain 70-90\% of the stars form in a gian molecular cloud, survive ages larger than 10 Myr \citep{Lada-Lada2003,Bonatto-Bica2011}. This dynamical evolution of the young clusters depends of its kinematics and total mass.
+
+\subsection{Stellar Populations}
+\label{sec:populations}
+
+\subsection{Initial Mass Function}
+\label{sec:IMF}
+
+\subsection{Dynamical Evolution of Clusters}
+\label{sec:evolution}
+
+\subsection{25 Orionis Group}
+\label{sec:25Ori}
+
+\subsection{Motivation}
+\label{sec:motivation}
+
+\subsection{Main Goals}
+\label{sec:goals}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Photometric Analisys}
+\section{Photometric Analysis\ (Su\'arez et al. 2018, submitted)}
 \label{sec:photometry}
 
 \subsection{Research Statement}
@@ -2696,7 +2702,7 @@ As a continuation of the scientific analysis derived from this work, we list som
 		Construct, by the first time in a stellar association, the spectroscopic-based IMF across the whole population. \par
 		Analyze the kinematics, combining RVs from APOGEE-2 and MES with Gaia DR2, for the LMSs and intermediate/high mass stars to try to disentangle the presence of other associations overlapping 25 Ori, as suggested by \citet{Kounkel2018,Briceno2018}. \par
 		Study the mass segregation effect in a relatively young group which could indicate the nature of this phenomenon; if it is a primordial property \citep{Bonnell-Davies1998,Bonnell2001} or due to dynamical evolution \citep{Kroupa2001a,Kroupa2001b} of clusters. This kind of study is also important to understand the BD formation mechanism because it is argued they are ejected objects during the earliest stages \citep{Reipurth-Clarke2001}. \par
-		Analyze the age dispersion of the members to contribute to the understanding of this phenomenon to know until which degree it can be explained by the corresponding uncertainties or if it is a real effect \citep{Palla-Stahler1999}. Also, we can look for any tendency of the ages with respect to the mass as a indicative than the formation of objects with certain masses occur first. \par
+		Analyze the age dispersion of the members to contribute to the understanding of this phenomenon to know until which degree it can be explained by the corresponding uncertainties or if it is a real effect \citep{Palla-Stahler1999,Palla-Stahler2000}. Also, we can look for any tendency of the ages with respect to the mass as a indicative than the formation of objects with certain masses occur first. \par
  %suggests if the formation of stars with different masses occurs at the same time or not. \par
 		Study the frequency of the circumstellar disks in a wide mass range, from planetary-mass objects to intermediate/high mass stars (Downes et al. 2019, in prep.)
 \end{itemize}
@@ -2707,11 +2713,14 @@ As a continuation of the scientific analysis derived from this work, we list som
 % from now on sections are numerated with capital letters
 \appendix
 
-\section{Collaborations}
-\label{sec:collaborations}
-Part of the data to carry out this thesis project was obtained working in collaboration in several studies. Additionally, valuable experience on the analysis of photometric and spectroscopic data was obtained participating in these collaborations. In the following sections I describe my constribution in each collaboration and how it is related to my thesis project.
+\section{Additional Contributions}
+\label{sec:constributions}
 
-\subsection{Ram\'irez-Preciado et al. 2018}
+\subsection{Collaborations}
+\label{sec:collaborations}
+Part of the data to carry out this thesis project was obtained working in collaboration in several studies. Additionally, valuable experience on the analysis of photometric and spectroscopic data was obtained participating in these collaborations. In this appendix I describe my constribution in each collaboration and how it is related to my thesis project.
+
+\subsubsection{Ram\'irez-Preciado et al. 2018}
 \label{sec:Ramirez-Preciado}
 My main contribution in the \cite{Ramirez-Preciado2018} study was to estimate the physical parameters ($L_{bol}$, mass and age) for a sample of 571 candidates to belong to young nearby moving groups (YNMGs) to depurate the sample by removing post-MS star contaminants. This sample was obtained from chromospheric active stars in the Radial Velocity Experiment (RAVE) catalog \citep{Kunder2017}.
 
@@ -2719,7 +2728,7 @@ For this purpose, I used the PHYPAR routine with $T_{eff}$ and $A_V$ from RAVE, 
 
 The experience I obtained working with this data allowed me to improve my own PHYPAR routine, which we are using for the estimation of the $L_{bol}$, mass and age of the resulting members of 25 Ori in our onging spectroscopic survey.
 
-\subsection{Kounkel et al. 2018}
+\subsubsection{Kounkel et al. 2018}
 \label{sec:Kounkel}
 As part of my collaboration with the APOGEE-2 Young Star Clusters working group, I contributed with the determination of the physical parameters ($A_V$, $L_{bol}$, mass and age) of the APOGEE-2 targets in the Orion Complex, which are distributed in several associations as $\lambda$ Ori, Orion A, Orion B, Orion OB1a and Orion OB1b. These results are part of the \citet{Kounkel2018} study about the 6D-structure of the Orion Star-forming Complex.
 
@@ -2733,7 +2742,7 @@ After the identification of spatially and/or kinematically distinct stellar grou
 
 The physical parameters of the highly propable members of 25 Ori obtained in this collaboration constitute part of the spectroscopic survey of my own thesis project.
 
-\subsection{Cottle et al. 2017}
+\subsubsection{Cottle et al. 2017}
 \label{sec:Cottle}
 In the \citet{Cottle2018} collaboration, I participated in the selection of the Orion targets that were observed with the APOGEE-2 spectrograph. Particularly, I selected about 4500 photometric member candidates of Orion OB1a and OB1b on the basis of their positions in the $I$ vs $I-J$ and $I$ vs $I-K$ diagrams using photometry from the USNO and 2MASS catalogs (see Figures 15, 16 and 17 from \citealt{Cottle2018}). I considered as candidates the sources lying inside the defined PMS locus assuming the empirical isochrone traced by several spectroscopically confirmed members and highly probable members in the regions. Additionally, the target selection includes uniformly selected sources on the basis of IR excesses working with the 2MASS and WISE catalogs and variability from the PanSTARRS catalog as well as X-ray sources from the 3XMM-DR5 catalog. I worked in the design of the plates using a prioritization method to ensure the observation of the uniform selected sources, then of the X-ray sources and finally, to fill the remaining fibers, of the candidates from the CMDs.
 
@@ -2741,30 +2750,30 @@ For most of these targets, together with those in the $\lambda$ Ori, Orion A and
 
 The APOGEE-2 plates dedicated to 25 Ori (Ori OB1ab-E and OB1ab-F) were designed as part of this collabaration. These data are an important part of the 25 Ori ongoing follow-up spectroscopy in this thesis project.
 
-\subsection{Richer et al. 2017}
+\subsubsection{Richer et al. 2017}
 %\subsection{\citealt{Richer2017}}
 \label{sec:Richer}
 I participated measuring the Full Width at Half Maximum (FWHM) of several spectral lines ([NII]$\lambda\lambda$6548,6583, HeII$\lambda$6560, H$_\alpha$ and CII$\lambda$6578) in high-resolution spectra of 76 planetary nebulae, most of them obtained from the San Pedro M\'artir Kinematic Catalogue of Planetary Nebulae \citep{Lopez2012}. These measurements were used in the \citet{Richer2017} study of the kinematics of the CII$\lambda$6578 permitted line with respect to the other mentioned lines to contribute to the understanding of the well-known abundance discrepancy problem.
 
 For the measurements of the FWHMs of the lines of interest, I worked with \texttt{IRAF} tasks to fit gaussians to the observed line profiles. The experience I obtained from this study was applied to the analysis of the spectra in 25 Ori from the BOSS spectrograph \citep{Suarez2017}. Also, this ability is being used to analyze the spectra from the rest of the spectroscopic survey.
 
-\subsection{Interdisciplinary Collaborations}
+\subsubsection{Interdisciplinary Collaborations}
 \label{sec:interdisciplinary_collaborations}
 Due to my contribution in the selection of APOGEE-2 targets in the Orion Complex and in the analysis of these spectra as well as to my participation in the meeting of the APOGEE-2 Young Star Clusters working group, I am coauthor in the following papers: $i)$ 13th Data Release of SDSS \citep{SDSS-DR13}, $ii)$ SDSS-IV \citep{Blanton2017} and $iii)$ 14th Data Release of SDSS \citep{SDSS-DR14}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Proceedings}
+\subsection{Proceedings}
 \label{sec:proceedings}
 
-\subsection{XV Latin American Regional IAU Meeting}
+\subsubsection{XV Latin American Regional IAU Meeting}
 \label{sec:LARIM2016}
 During the XV Latin American Regional IAU Meeting I presented my PhD thesis project and the status of the work, as described in \citet{Suarez2017b}. Also, I presented the analysis of low-resolution spectra in 25 Ori from the BOSS spectrograph, which are part of the \citet{Suarez2017} study.
 
-\subsection{Francesco's Legacy: Star Formation in Space and Time}
+\subsubsection{Francesco's Legacy: Star Formation in Space and Time}
 \label{sec:SFST2017}
 I presented in the \citet{Suarez2017c} contribution, during the Francesco's Legacy: Star Formation in Space and Time conference, the advances of the photometric determination of the system IMF of 25 Ori, stressing the importance and difficulties of removing the extragalactic contamination in deep photometric studies in this kind of stellar associations that present minimum extinction.
 
-\subsection{Cool Stars 20}
+\subsubsection{Cool Stars 20}
 \label{sec:CS20}
 During the Cool Star 20 conference I presented in \citet{Suarez2018} the determination of the 25 Ori system IMF complete from 12 $M_{Jup}$ to 13.1 $M_\odot$. This presentation allowed to improve the discussion about the comparisons between this IMF and those in other clusters, as describe in the Su\'arez et al. (2018, submitted) study.
 
@@ -2867,7 +2876,7 @@ CI	= 0.479 ; A_I/A_V = 0.479 (Cardelli et al. 1989).				 ;#
 CJ	= 0.282 ; A_J/A_V = 0.282 (Cardelli et al. 1989).				 ;#
 CH	= 0.190 ; A_H/A_V = 0.190 (Cardelli et al. 1989).				 ;#
 CK	= 0.114 ; A_K/A_V = 0.114 (Cardelli et al. 1989).				 ;#
-CG	= 0.9145; A_G/A_V = 0.9145 (J. Hernandez private communication).  ;#
+CG	= 0.9145; A_G/A_V = 0.9145 (J. Hernández private communication).  ;#
 																	    ;#
 ;#########################################################################
 
@@ -3124,7 +3133,7 @@ end
 %%%%%%%%%%%%%%%%% REFERENCES %%%%%%%%%%%%%%%%%%%%%
 \small
 \setlength{\bibsep}{0pt plus 0.4ex}
-\bibliography{mybib_Suarez} % if your bibtex file is called example.bib
+\bibliography{/home/gsuarez/TRABAJO/PDFs/mybib_Suarez} % if your bibtex file is called example.bib
 
 %\thispagestyle{empty}
 %
